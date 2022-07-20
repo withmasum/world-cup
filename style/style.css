@@ -262,3 +262,102 @@ nav a {
 
 
 }
+
+/* hr  */
+hr {
+    width: 13320px;
+    background-color: #FFFFFF;
+    opacity: 10%;
+}
+
+/* footer */
+
+
+footer {
+
+    color: white;
+    background-color: #161616;
+    padding: 30px;
+
+
+}
+
+footer h1 {
+    text-align: center;
+}
+
+footer ul {
+
+    display: inline-block;
+
+}
+
+footer a {
+
+    display: flex;
+    color: #B9B9B9;
+    text-decoration: none;
+    float: left;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.inline {
+
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+
+}
+
+
+/* Social Icon */
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-icon {
+    padding: 2px;
+}
+
+
+/* Devices Accelaration */
+
+@media screen and (min-width: 688px) and (max-width: 992px) {
+
+    .container {
+
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+
+
+
+    }
+
+
+
+}
+
+/* mobile quries */
+/* mobile device */
+
+@media screen and (max-width:688px) {
+
+
+    .container {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+}
