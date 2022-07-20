@@ -1,0 +1,71 @@
+/* import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* utilities  */
+body {
+
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.container {
+    background-color: #161616;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 1321px;
+    height: auto;
+    border-radius: 30px;
+
+
+
+}
+
+.container h1 {
+
+    color: white;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.container p {
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+
+
+/* top-banner section  */
+
+.top-banner {}
+
+/* top-banner-button */
+
+.top-banner a {
+    color: white;
+    text-decoration: none;
+    background-color: #DD0000;
+    padding-top: 16px;
+    padding-left: 25px;
+    padding-bottom: 16px;
+    padding-right: 25px;
+    border-radius: 5px;
+}
+
+
+.top-banner-text {
+    margin-top: 111px;
+    margin-left: 106px;
+    margin-bottom: 111px;
+    width: 531px;
+    height: 434px;
+}
+
+
+.top-banner-image {}
+
+.top-banner-image img {
+    width: 100%;
+}
