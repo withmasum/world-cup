@@ -14,9 +14,11 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .container {
+
     background-color: #161616;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -77,3 +79,48 @@ main {
 .top-banner-image img {
     width: 100%;
 }
+
+/* blog section  */
+
+
+
+.blogs {
+
+    margin-top: 20px;
+    display: flex;
+
+
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs h4 {
+    font-size: 16px;
+    color: #161616;
+    border: 2px solid black;
+    line-height: 24px;
+    font-weight: 500;
+
+}
+
+.blogs p {}
+
+
+
+.blog {}
+
+.t-box {
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.t-title {}
