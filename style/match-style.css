@@ -19,6 +19,9 @@ main {
 }
 
 .container {
+    background-image: url(/assets/images/wcup_cover.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 
     background-color: #161616;
     display: grid;
@@ -63,6 +66,16 @@ main {
     padding-bottom: 16px;
     padding-right: 25px;
     border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.6s;
+    outline: none;
+
+}
+
+.top-banner a:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: #000;
 }
 
 
@@ -145,6 +158,16 @@ nav a {
     border-radius: 10px;
 }
 
+.button-white:hover {
+
+    cursor: pointer;
+    color: white;
+    background-color: red;
+
+
+}
+
+
 .button-red {
     background-color: red;
     color: white;
@@ -153,6 +176,11 @@ nav a {
     border-radius: 10px;
 }
 
+.button-red:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: black;
+}
 
 
 
@@ -372,4 +400,179 @@ footer a {
 
 .single-icon {
     padding: 2px;
+}
+
+
+/* Devices Accelaration */
+
+@media screen and (min-width: 687px) and (max-width: 992px) {
+
+    .container {
+
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        width: 100%;
+
+
+
+
+    }
+
+    .container img {
+        width: 100%;
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        flex-direction: column;
+        column-gap: 6px;
+        width: 100%;
+        margin-top: 280px;
+        margin-right: 380px;
+    }
+
+    .blog-section img {
+        width: 100%;
+    }
+
+    /* responsive nav  */
+
+
+    .nav-container-2 {
+        background-color: black;
+        width: 312px;
+        height: 312px;
+        margin-left: -360px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        display: grid;
+
+
+    }
+
+
+    /* responsive naav end  */
+
+    .nav-container {
+        background-color: transparent;
+
+        position: absolute;
+        margin-left: 240px;
+        margin-top: -260px;
+
+
+
+    }
+
+    nav ul {
+
+        display: flex;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+        margin-left: 20px;
+
+
+
+
+    }
+
+
+
+    .button-white {
+
+        border: 1px solid black;
+
+
+
+
+
+    }
+}
+
+/* mobile quries */
+/* mobile device */
+
+@media screen and (max-width:688px) {
+
+    body {
+
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .container {
+
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+
+    }
+
+    /* nav responsive */
+    .nav-container {
+        background-color: transparent;
+
+        display: flex;
+        position: relative;
+        margin-top: -200px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40px;
+        margin-top: 0px;
+
+
+    }
+
+    .nav-container a {
+        border: 1px solid black;
+        ;
+    }
+
+
+    /* top-banner txt  */
+
+    .top-banner-text {
+        text-align: center;
+        margin-right: 90px;
+    }
+
+    .blog-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
+        column-gap: 6px;
+        width: 100%;
+        margin-top: 30px;
+        margin-right: 380px;
+    }
+
+    .blog-section img {
+        width: 100%;
+    }
+
+    .inline {
+        display: grid;
+        grid-template-columns: (1, 1fr);
+
+    }
+
+
+    .inline a {
+        display: flex;
+
+    }
+
+
+
 }

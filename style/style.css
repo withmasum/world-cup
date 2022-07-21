@@ -18,8 +18,16 @@ main {
 
 }
 
+
+
 .container {
 
+
+    background-image: url(/assets/images/wcup_cover.jpg);
+
+    background-position: unset;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-color: #161616;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -29,6 +37,10 @@ main {
 
 
 
+}
+
+.container img {
+    width: 100%;
 }
 
 .container h1 {
@@ -50,7 +62,9 @@ main {
 
 /* top-banner section  */
 
-.top-banner {}
+.top-banner {
+    max-height: auto;
+}
 
 /* top-banner-button */
 
@@ -63,6 +77,15 @@ main {
     padding-bottom: 16px;
     padding-right: 25px;
     border-radius: 5px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.6s;
+    outline: none;
+}
+
+.top-banner a:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: #000;
 }
 
 
@@ -143,6 +166,16 @@ nav a {
     width: 252px;
     height: 64px;
     border-radius: 10px;
+
+}
+
+.button-white:hover {
+
+    cursor: pointer;
+    color: white;
+    background-color: red;
+
+
 }
 
 .button-red {
@@ -151,6 +184,13 @@ nav a {
     width: 252px;
     height: 64px;
     border-radius: 10px;
+
+}
+
+.button-red:hover {
+    box-shadow: inset 300px 0 0 0 #f9e506;
+    cursor: pointer;
+    color: black;
 }
 
 
@@ -328,22 +368,39 @@ footer a {
 
 /* Devices Accelaration */
 
-@media screen and (min-width: 688px) and (max-width: 992px) {
+@media screen and (min-width: 687px) and (max-width: 992px) {
 
     .container {
 
         grid-template-columns: repeat(2, 1fr);
         display: grid;
-        width: 100%;
-
-
 
 
     }
 
+    .top-banner {
+
+        width: 100%;
+    }
+
+    .top-banner img {
+
+        width: 100%;
+        margin-left: -150px;
+        margin-top: 230px;
+
+    }
+
+    /* container image test  
     .container img {
-        width: 100%;
+        width: 500px;
+        margin-left: -150px;
+        margin-top: 230px;
+   margin-left: -130px;
+        margin-top: 270px;
     }
+*/
+
 
     .blog-section {
         display: grid;
@@ -359,6 +416,27 @@ footer a {
         width: 100%;
     }
 
+    /* responsive nav  */
+
+
+    .nav-container-2 {
+        background-color: black;
+        width: 312px;
+        height: 312px;
+        margin-left: -360px;
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 10px;
+        position: absolute;
+        display: grid;
+
+
+    }
+
+
+    /* responsive naav end  */
 
     .nav-container {
         background-color: transparent;
@@ -373,31 +451,36 @@ footer a {
 
     nav ul {
 
-        display: grid;
+        display: flex;
         grid-template-columns: repeat(3, 1fr);
         justify-content: center;
         align-items: center;
         column-gap: 10px;
         margin-left: 20px;
 
+
+
+
     }
+
 
 
     .button-white {
 
         border: 1px solid black;
-        margin-bottom: -90px;
+
+
+
+
+
     }
-
-
-
-
 }
 
 /* mobile quries */
 /* mobile device */
 
 @media screen and (max-width:688px) {
+
 
 
     .container {
@@ -408,8 +491,18 @@ footer a {
         justify-content: center;
         text-align: center;
         flex-direction: column;
-        margin: 0 auto;
 
+
+
+
+
+    }
+
+    /* top-banner txt  */
+
+    .top-banner-text {
+        text-align: center;
+        margin-right: 90px;
     }
 
     /* nav responsive */
@@ -425,6 +518,12 @@ footer a {
         margin-top: 0px;
 
 
+
+    }
+
+    .nav-container a {
+        border: 1px solid black;
+        ;
     }
 
     .blog-section {
@@ -435,13 +534,25 @@ footer a {
         width: 100%;
         margin-top: 30px;
         margin-right: 380px;
+
     }
 
     .blog-section img {
         width: 100%;
     }
 
+    .inline {
+        display: grid;
+        grid-template-columns: (1, 1fr);
 
+    }
+
+
+    .inline a {
+        display: flex;
+
+
+    }
 
 
 
