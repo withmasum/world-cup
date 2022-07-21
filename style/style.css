@@ -313,6 +313,28 @@ hr {
     opacity: 10%;
 }
 
+/* View All Butoon Style  */
+.view-all {}
+
+.view-all a {
+
+    text-decoration: none;
+    background-color: red;
+    padding: 12px 29px;
+    border-radius: 5px;
+    color: white;
+    display: none;
+}
+
+
+
+
+
+/* End  */
+
+
+
+
 /* footer */
 
 
@@ -477,6 +499,17 @@ footer a {
 
 
     }
+
+    .view-all a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        background-color: red;
+        padding: 12px 29px;
+        border-radius: 5px;
+        color: white;
+    }
 }
 
 /* mobile quries */
@@ -556,6 +589,7 @@ footer a {
 
 
     }
+
 
 
 
