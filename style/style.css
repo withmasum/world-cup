@@ -108,7 +108,6 @@ main {
 }
 
 
-.top-banner-image {}
 
 .top-banner-image img {
     width: 100%;
@@ -118,7 +117,6 @@ main {
 
 /* nav bar and button properties */
 
-nav {}
 
 nav ul {
     list-style: none;
@@ -165,10 +163,8 @@ nav a {
 
 }
 
-.nav-bar-box {}
 
 
-.ul-list {}
 
 .button-white {
     background-color: white;
@@ -256,7 +252,6 @@ nav a {
 
 
 
-.blog {}
 
 .t-box {
     width: 100px;
@@ -269,7 +264,6 @@ nav a {
 
 
 
-.t-title {}
 
 
 /* analytics icon */
@@ -280,7 +274,6 @@ nav a {
     justify-content: space-between;
 }
 
-.time {}
 
 
 .time,
